@@ -50,3 +50,4 @@ void write(char *linhas);
 void COMANDO( char *linhas, const ptr_FUNC_VOIDCHARptr func){
   return func( linhas );
 }
+cd 
