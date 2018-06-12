@@ -1,7 +1,8 @@
-NOME = -o editor
-MAIN_src = main.c
+NOME = -o edit
 SRC = ./src/
 INCLUDE = ./include/
+
+MAIN_src = $(SRC)main.c
 
 CC = gcc
 CC_flags = -Wall -I$(INCLUDE)
@@ -10,10 +11,10 @@ CC_flags = -Wall -I$(INCLUDE)
 all: editor 
 
 editor:
-	$(CC) $(NOME) $(SRC)$(MAIN_src) $(CC_flags)
+	$(CC) $(NOME) $(MAIN_src) $(CC_flags)
 
 purge:
-	rm editor
+	rm edit
 
 #regras para o controle de versão
 commit:
